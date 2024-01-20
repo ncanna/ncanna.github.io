@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Noise Landscape</title>
+    <style>
+        body { margin: 0; background-color: black; }
+        canvas { width: 100%; height: 100% }
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scene setup
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            // Create a 25x25 grid landscape
+            const geometry = new THREE.PlaneGeometry(25, 25, 24, 24);
+            geometry.vertices.map(v => {
+                v.z = Math.random() * 5; // Random z value for noise
+            });
+
+            // Mesh with basic white material
+            const material = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true });
+            const plane = new THREE.Mesh(geometry, material);
+            scene.add(plane);
+
+            // Rotate to lay flat and adjust camera
+            plane.rotation.x = -Math.PI / 2;
+            camera.position.z = 35;
+
+            // Animation function
+            const animate = function () {
+                requestAnimationFrame(animate);
+                renderer.render(scene, camera);
+            };
+
+            animate();
+        });
+    </script>
+</body>
+</html>
