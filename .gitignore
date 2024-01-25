@@ -1,3 +1,5 @@
 .DS_Store
 *.mp3
 *.ipynb_checkpoints
+/.vite
+*.pyc
