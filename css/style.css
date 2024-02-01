@@ -9,47 +9,71 @@ body {
 
 header h1 {
     text-align: center;
-    font-size: 40px;
-    color: white;
+    font-size: 72px;
+    color: #2E2E2E;
+    font-family: 'Cedarville Cursive', cursive;
 }
-
+.blue {
+    color: #190BA3;
+  }
+  .orange {
+    color: #E77207;
+  }
 header {
     padding: 40px;
-    background-color: rgb(17, 124, 143);
+    background-size: cover;
+    background-image: radial-gradient(circle, rgba(255,249,243,0.5) 73%, rgba(245,234,216,0.5) 100%), url('https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms/background.jpg'); 
+    box-shadow: inset 0 0 0 1000px rgba(235, 215, 169,.6);
 }
 
 nav {
     background-color: #333;
     overflow: hidden;
+    text-align: center;
+    padding: 20px;
 }
 
 nav a {
     text-decoration: none;
     padding: 20px;
     text-align: center;
-    float: left;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 20px;
+    text-align: center;
     color: white;
 }
 
 main {
     background-color: white;
-    text-align: center;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h2 {
-    padding: 20px;
+    padding: 2% 0px 0px 2%;
 }
 
-section:nth-child(even) {
+.demo {
     background-color: rgb(241, 241, 241);
 }
 
-section {
-    min-height: 100vh;
+p {
+    text-align: justify;
+    text-indent: 25px;
+    padding: 0px 0px 0px 2%;
 }
-
+li {
+    margin-left: 5%;
+}
 video {
-    padding: 10px;
+    padding-left: 3%;
+    padding-bottom: 3%;
 }
 
 iframe {

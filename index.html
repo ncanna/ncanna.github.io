@@ -2,36 +2,60 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Courier+Prime:ital@1&display=swap" rel="stylesheet">
     </head>
 <body>
     <header>
-        <h1>hometown entropy</h1>
+        <h1><span class="blue">h</span>ometown <span class="orange">e</span>ntropy</h1>
     </header>
     <nav>
-        <a href="#">about</a>
-        <a href="#">demos</a>
-        <a href="#">design process</a>
-        <a href="#">tools</a>
-        <a href="#"></a>
+        <a href="#about">about</a>
+        <a href="#demos">demos</a>
+        <a href="#design">design process</a>
+        <a href="#tools">tools</a>
     </nav>
     <main>
         <section>
+            <div id="about"></div>
             <h2>about the project</h2>
+
+            <p>A NPR article in 2012 described cities as a network of data points that all create chaos, or entropy. From the simplest components to single individuals to groups of people and large vast systems of information, media, and energy - cities are bodies of change. But they are also our home. For this year’s theme, I created an interactive web app that captures some of this chaos innate to our world from the smallest to the largest levels. ‘Hometown Entropy’ takes in multiple streams of data to create a grid of entropy changes. On one end of the grid is local changes and on the far end is global and even universal entropy - as measured by social media and physics constants. A single person can cause entropy. </p>
+                
+            <p>If web camera or touch screen enabled - the app can read in cursor movement or changes in color and motion from its environments. This is doubly true if more than one person is in the frame - more people - more chaos! These changes will reflect on the left side of the grid. One the middle portion - the entropy or change is based on social media tags (Twitter/X). Based on the time stamp (daily/weekly/monthly), the app captures how much change there was during Charlottesville tagged posts. Moving further right - the same occurs for change overall in the top 10 social media tags in the US and then the world. Finally, the Universe has entropy as well - it is constantly changing and growing albeit at a rate we can somewhat monitor. The far right scales down this noise using physics constants as a source of constant entropy. Overall, the app seeks to capture data at different scales, unite it, and portray our relationship to entropy, change, and disorder - whether that is one individual’s actions or that of all of us.</p>
+
         </section>
-        <section>
+
+        <section class="demo">
+            <div id="demos"></div>
             <h2>demos</h2>
-            <video src="demo/demo.mp4" width="33%" poster="demo/demo.jpg" controls></video>
-            <video src="demo/1.m4v" width="33%" poster="demo/1.png" controls></video>
-            <video src="demo/2.mp4" width="33%" poster="demo/2.jpg" controls></video>
-            <br>
-            <br>
-            <br>
-            <video src="demo/3 Lecture 3.mp4" width="33%" poster="demo/3.jpg" controls></video>
-            <video src="demo/4.mp4" width="33%" poster="demo/4.jpg" controls></video>
-            <video src="demo/5.mp4" width="33%" poster="demo/5.jpg" controls></video>
+            <video src="demo/demo.mp4" width="32%" poster="demo/demo.png" controls></video>
+            <video src="demo/1.m4v" width="32%" poster="demo/demo2.png" controls></video>
+            <video src="demo/2.mp4" width="32%" poster="demo/demo3.png" controls></video>
+        </section>
+
+        <section>
+            <div id="design"></div>
+            <h2>design process</h2>
+
+            <p>TBD!</p>
+
+        </section>
+
+        <section>
+            <div id="tools"></div>
+            <h2>tools</h2>
+            <p>Tools that helped build 'hometown entropy' include:
+            <ul> 
+                <li>JavaScript (Node, WebGL)</li>
+                <li>HTML, CSS, & PHP</li>
+                <li>Python (Pandas, OpenCV)</li>
+            </ul>
+            </p>
+
         </section>
     </main>
     
+    <br>
     <footer>
         <a href="#">&copy; 2024 | Navya Annapareddy</a>
     </footer>
